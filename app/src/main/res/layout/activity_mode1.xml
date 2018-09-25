@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_mode1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:text="停止"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/stop"
+        android:layout_alignBaseline="@+id/pause"
+        android:layout_alignBottom="@+id/pause"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:text="共享"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button11"
+        android:onClick="mode1_share (mode1)"
+        android:layout_alignBaseline="@+id/save"
+        android:layout_alignBottom="@+id/save"
+        android:layout_toEndOf="@+id/pause"
+        android:layout_toRightOf="@+id/pause" />
+
+    <Button
+        android:text="暂停"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pause"
+        android:layout_alignBaseline="@+id/start"
+        android:layout_alignBottom="@+id/start"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="保存"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/save"
+        android:layout_below="@+id/start"
+        android:layout_toLeftOf="@+id/pause"
+        android:layout_toStartOf="@+id/pause"
+        android:layout_marginRight="11dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginTop="39dp" />
+
+    <LinearLayout
+        android:id="@+id/wave"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="#000"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+    </LinearLayout>
+
+    <Button
+        android:text="开始"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/start"
+        android:layout_below="@+id/wave"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="33dp" />
+
+    <TextView
+        android:text="00"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/attvalu"
+        android:layout_alignBaseline="@+id/textView32"
+        android:layout_alignBottom="@+id/textView32"
+        android:layout_toRightOf="@+id/save"
+        android:layout_toEndOf="@+id/save" />
+
+    <TextView
+        android:text="平静度"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:id="@+id/textView34"
+        android:layout_below="@+id/textView32"
+        android:layout_alignLeft="@+id/textView32"
+        android:layout_alignStart="@+id/textView32" />
+
+    <TextView
+        android:text="00"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView34"
+        android:layout_alignLeft="@+id/attvalu"
+        android:layout_alignStart="@+id/attvalu"
+        android:id="@+id/medvalu" />
+
+    <TextView
+        android:text="注意力"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView32"
+        android:layout_marginTop="14dp"
+        android:layout_below="@+id/save"
+        android:layout_alignLeft="@+id/save"
+        android:layout_alignStart="@+id/save" />
+
+    <Button
+        android:text="选择文件"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/medvalu"
+        android:layout_alignRight="@+id/button11"
+        android:layout_alignEnd="@+id/button11"
+        android:id="@+id/read" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_below="@+id/textView34">
+
+        <Button
+            android:id="@+id/firstSound"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="第一种声音" />
+
+        <Button
+            android:id="@+id/secondSound"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="第二种声音" />
+
+        <Button
+            android:id="@+id/thirdSound"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="第三种声音" />
+
+        <Button
+            android:id="@+id/fourth"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="混合" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.liudingming.listenyourbrain.MainActivity">
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_x="-3dp"
+        android:layout_y="397dp"
+        android:id="@+id/relativeLayout"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true">
+
+        <Button
+            android:id="@+id/homePage"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="23dp"
+            android:layout_x="77dp"
+            android:layout_y="284dp"
+            android:background="@drawable/homepage" />
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="0dp"
+            android:background="@drawable/mine" />
+
+        <Button
+            android:id="@+id/share"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="65dp"
+            android:layout_toStartOf="@+id/login"
+            android:background="@drawable/share" />
+
+        <Button
+            android:id="@+id/selectToPlay"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="65dp"
+            android:layout_toStartOf="@+id/share"
+            android:background="@drawable/play" />
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/fram"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/relativeLayout">
+
+    </FrameLayout>
+
+
+</RelativeLayout>
+
